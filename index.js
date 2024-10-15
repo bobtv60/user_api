@@ -7,12 +7,10 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
-// MongoDB connection
-mongoose.connect('mongodb+srv://TEST_USER:tjtu5wP1k6fGjQxw@generalknowledgeuserdat.aghyn.mongodb.net/?retryWrites=true&w=majority&appName=GeneralKnowledgeUserData', {
+mongoose.connect('', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
